@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz APP</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="settings">
+
+            <h2 class="title"> Quiz</h2>
+
+            <div class="category-section">
+                <label for="category">select category</label>
+
+                <select name="" id="category">
+                    <option value="9">General Knowlagde</option>
+                    <option value="27">Animals</option>
+                    <option value="23">History</option>
+                    <option value="21">Sports</option>
+                </select>
+            </div>
+
+
+            <div class="difficulty-section">
+                <label for="category">select difficulty</label>
+
+                <select name="" id="difficulty">
+                    <option value="easy">Easy</option>
+                    <option value="meduim">Meduim</option>
+                    <option value="hard">Hard</option>
+                </select>
+            </div>
+
+            <div class="nQuestion-section">
+                <label for="nQuestion">Number of questions</label>
+                <input type="number" id="nQuestion" placeholder="select number" />
+            </div>
+
+
+            <button id="start" type="submit">start quiz</button>
+        </div>
+
+    </div><!-- ./container -->
+
+
+
+
+    <div class="container">
+        <div class="quiz" style="display: none;">
+
+            <div class="count">
+                <span class="current"></span>
+                <span class="">questions have been answred of </span>
+                <span class="total"></span>
+            </div>
+
+            <div id="questions-container"> </div>
+
+            <button id="nextques"> submit</button>
+
+
+        </div>
+
+
+
+
+
+    </div><!-- ./container -->
+
+
+
+
+    <div class="container">
+        <div class="final" style="display: none;">
+            <h2>congratulations!!</h2>
+            <p class="score"></p>
+
+
+            <h4>try again</h4>
+            <button id="again">again</button>
+        </div>
+    </div><!-- ./container -->
+
+
+
+    <div class="ttt">
+
+    </div>
+
+
+
+    <script src="scrpt.js"></script>
+
+</body>
+
+</html>
